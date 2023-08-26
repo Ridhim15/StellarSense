@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@500;600;700;800&family=Hind+Siliguri:wght@400;500;600;700&family=Josefin+Sans&family=Kanit:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,900;1,200;1,400;1,600;1,900&family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&family=Poppins:wght@200&family=Roboto&display=swap" rel="stylesheet">
+    
+    
+    <title>Backdrop Blur</title>
+    <link rel="stylesheet" href="{{ url_for('static',filename='style.css') }}">
+    <script defer src="{{ url_for('static',filename='script.js') }}"></script>
+    <script defer src="{{ url_for('static',filename='Clouds-stars.js') }}"></script>
+</head>
+<body>
+    <div class="main">
+        <div class="nav">
+            <div class="leftnav">
+                <h3 style="font-weight: 900; font-size: 22px;">StellarSense</h3></div>
+            <div class="rightnav">
+                <h3>Home</h3><h3>Example</h3><h3>Api</h3></div>
+            </div>
+        </div>
+        <div id="stars"> </div>
+        <div class="blur">
+            <div class="sliders">
+                <h3>Ultravoilet</h3>
+                <input type="range" min="0" max="30" value="15" class="slider" id="slider-u" oninput="updateSlider()">
+                <h3>Green</h3>
+                <input type="range" min="0" max="30" value="12" class="slider" id="slider-g" oninput="updateSlider()">
+                <h3>Red</h3>
+                <input type="range" min="0" max="30" value="10" class="slider" id="slider-r" oninput="updateSlider()">
+                <h3>Infrared(I)</h3>
+                <input type="range" min="0" max="30" value="5" class="slider" id="slider-i" oninput="updateSlider()">
+                <h3>Infrared(Z)</h3>
+                <input type="range" min="0" max="30" value="8" class="slider" id="slider-z" oninput="updateSlider()">
+                <h3>Redshift</h3>
+                <input type="range" min="0" max="10" value="2" class="slider" id="slider-redshift" oninput="updateSlider()">
+            </div>
+            <div class="result">
+                <h3 class="restext" id="resulttext"></h3>
+                <div class="imgbox">
+                    <img id="resultimg" class="resultimg" src="https://www.keele.ac.uk/about/news/2021/november/keele-comment/galaxy-960.jpg" alt="Image here">
+                </div>
+            </div>
+                
+        </div>
+</div>
+</body>
+</html>
