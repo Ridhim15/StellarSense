@@ -36,8 +36,6 @@ StellarSense-main/
 - `static/`: Directory containing static assets such as JavaScript, CSS, and image files.
 - `templates/`: Directory containing HTML templates.
 
-## Visit the Deployed website ( Github Pages )
-
 ## Setup and Installation
 
 ### Prerequisites
