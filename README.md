@@ -1,9 +1,6 @@
 # StellarSense
 
-StellarSense stands as a beacon of innovation, seamlessly blending technology and astronomy to
-reveal the secrets hidden within galaxies, stars, black holes, and more. Through telescope images
-and various photometric data, StellarSense offers accurate, real-time classifications of celestial
-objects.
+StellarSense is a web-based classification model that uses a K-Nearest Neighbors (KNN) algorithm to predict the class of celestial objects based on their attributes. This project utilizes Flask for the web framework, along with HTML, CSS, and JavaScript for the front-end interface.
 
 ![Front page](./static/Assets/StellarSense%20Pitch%20PPT%20/1.png)
 ![Working](./static/Assets/StellarSense%20Pitch%20PPT%20/4.png)
